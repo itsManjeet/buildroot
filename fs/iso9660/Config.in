@@ -65,6 +65,12 @@ config BR2_TARGET_ROOTFS_ISO9660_BOOT_MENU
 	  will automatically be replaced by the path to the kernel and
 	  initrd images respectively.
 
+config BR2_TARGET_ROOTFS_ISO9660_VOLUME_ID
+	string "Volume ID"
+	default "BUILDROOT"
+	help
+	  Specify volume ID to search iso with ROOT=LABEL=
+
 config BR2_TARGET_ROOTFS_ISO9660_INITRD
 	bool "Use initrd"
 	default y
