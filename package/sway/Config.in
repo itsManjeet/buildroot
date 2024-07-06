@@ -1,6 +1,5 @@
 config BR2_PACKAGE_SWAY
 	bool "sway"
-	depends on BR2_PACKAGE_SYSTEMD # is required by the sd-bus provider
 	depends on !BR2_STATIC_LIBS # wlroots
 	depends on BR2_TOOLCHAIN_HAS_THREADS # pango, wlroots
 	depends on BR2_PACKAGE_HAS_LIBEGL # wlroots
@@ -55,8 +54,7 @@ config BR2_PACKAGE_SWAY_SWAYNAG
 endif # BR2_PACKAGE_SWAY
 
 comment "sway needs systemd, udev, EGL w/ Wayland backend and OpenGL ES support"
-	depends on !BR2_PACKAGE_SYSTEMD || \
-		!BR2_PACKAGE_HAS_UDEV || \
+	depends on !BR2_PACKAGE_HAS_UDEV || \
 		!BR2_PACKAGE_HAS_LIBEGL || \
 		!BR2_PACKAGE_HAS_LIBEGL_WAYLAND || \
 		!BR2_PACKAGE_HAS_LIBGLES
