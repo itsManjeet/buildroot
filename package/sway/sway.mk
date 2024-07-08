@@ -14,7 +14,8 @@ SWAY_CONF_OPTS = \
 	-Dzsh-completions=false \
 	-Dfish-completions=false \
 	-Dman-pages=disabled \
-	-Dsd-bus-provider=auto
+	-Dsd-bus-provider=auto \
+	-Ddefault-wallpaper=false
 
 ifeq ($(BR2_PACKAGE_WLROOTS_X11),y)
 SWAY_CONF_OPTS += -Dxwayland=enabled
