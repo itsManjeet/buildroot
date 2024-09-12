@@ -4,8 +4,8 @@
 #
 ################################################################################
 
-WLROOTS_VERSION = 0.16.2
-WLROOTS_SITE = https://gitlab.freedesktop.org/wlroots/wlroots/-/releases/$(WLROOTS_VERSION)/downloads
+WLROOTS_VERSION = 0.17.4
+WLROOTS_SITE = https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/$(WLROOTS_VERSION)
 WLROOTS_LICENSE = MIT
 WLROOTS_LICENSE_FILES = LICENSE
 WLROOTS_INSTALL_STAGING = YES
