@@ -13,7 +13,8 @@ SWAY_CONF_OPTS = \
 	-Dwerror=false \
 	-Dzsh-completions=false \
 	-Dfish-completions=false \
-	-Dman-pages=disabled
+	-Dman-pages=disabled \
+	-Ddefault-wallpaper=false
 
 ifeq ($(BR2_PACKAGE_WLROOTS_X11),y)
 SWAY_CONF_OPTS += -Dxwayland=enabled
@@ -40,12 +41,6 @@ ifeq ($(BR2_PACKAGE_BASH_COMPLETION),y)
 SWAY_CONF_OPTS += -Dbash-completions=true
 else
 SWAY_CONF_OPTS += -Dbash-completions=false
-endif
-
-ifeq ($(BR2_PACKAGE_SWAYBG),y)
-SWAY_CONF_OPTS += -Ddefault-wallpaper=true
-else
-SWAY_CONF_OPTS += -Ddefault-wallpaper=false
 endif
 
 ifeq ($(BR2_PACKAGE_SWAY_SWAYBAR),y)
