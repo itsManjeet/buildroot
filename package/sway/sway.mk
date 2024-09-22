@@ -16,7 +16,7 @@ SWAY_CONF_OPTS = \
 	-Dman-pages=disabled \
 	-Ddefault-wallpaper=false
 
-ifeq ($(BR2_PACKAGE_WLROOTS_X11),y)
+ifeq ($(BR2_PACKAGE_WLROOTS_XWAYLAND),y)
 SWAY_CONF_OPTS += -Dxwayland=enabled
 else
 SWAY_CONF_OPTS += -Dxwayland=disabled
