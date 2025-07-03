@@ -174,10 +174,13 @@ define $(2)_CONFIGURE_CMDS
 		--target=$$(GNU_TARGET_NAME) \
 		--host=$$(GNU_TARGET_NAME) \
 		--build=$$(GNU_HOST_NAME) \
-		--prefix=/usr \
-		--exec-prefix=/usr \
-		--sysconfdir=/etc \
-		--localstatedir=/var \
+		--prefix=/ \
+		--exec-prefix=/ \
+		--bindir=/cmd \
+		--sbindir=/cmd \
+		--sysconfdir=/config \
+		--localstatedir=/cache \
+		--datadir=/data \
 		--program-prefix="" \
 		--disable-gtk-doc \
 		--disable-gtk-doc-html \
@@ -206,8 +209,8 @@ define $(2)_CONFIGURE_CMDS
 	CONFIG_SITE=/dev/null \
 	./configure \
 		--prefix="$$(HOST_DIR)" \
-		--sysconfdir="$$(HOST_DIR)/etc" \
-		--localstatedir="$$(HOST_DIR)/var" \
+		--sysconfdir="$$(HOST_DIR)/config" \
+		--localstatedir="$$(HOST_DIR)/cache" \
 		--enable-shared --disable-static \
 		--disable-gtk-doc \
 		--disable-gtk-doc-html \

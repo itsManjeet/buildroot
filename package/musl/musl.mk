@@ -50,7 +50,7 @@ define MUSL_CONFIGURE_CMDS
 		./configure \
 			--target=$(GNU_TARGET_NAME) \
 			--host=$(GNU_TARGET_NAME) \
-			--prefix=/usr \
+			--prefix=/ \
 			--libdir=/lib \
 			--disable-gcc-wrapper \
 			--enable-static \

@@ -158,8 +158,11 @@ define $(2)_CONFIGURE_CMDS
 	CXX_FOR_BUILD="$$(HOSTCXX)" \
 	$$($$(PKG)_CONF_ENV) \
 	$$(MESON) setup \
-		--prefix=/usr \
-		--libdir=lib \
+		--prefix=/ \
+		--bindir=/cmd \
+		--sbindir=/cmd \
+		--datadir=/data \
+		--libdir=/lib \
 		--default-library=$(PKG_MESON_DEFAULT_LIBRARY) \
 		--buildtype=$(if $(BR2_ENABLE_RUNTIME_DEBUG),debug,release) \
 		--cross-file=$$($$(PKG)_SRCDIR)/buildroot-build/cross-compilation.conf \
