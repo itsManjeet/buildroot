@@ -77,6 +77,9 @@ static char *predef_args[] = {
 #ifdef BR_SOFTFLOAT
 	"-msoft-float",
 #endif /* BR_SOFTFLOAT */
+#ifdef BR_SIMD
+	"-msimd=" BR_SIMD,
+#endif
 #ifdef BR_MODE
 	"-m" BR_MODE,
 #endif
@@ -523,7 +526,7 @@ int main(int argc, char **argv)
 		}
 #endif
 #ifdef BR_CCACHE_BASEDIR
-		/* Allow compilercheck to be overridden through the environment */
+		/* Allow basedir to be overridden through the environment */
 		if (setenv("CCACHE_BASEDIR", BR_CCACHE_BASEDIR, 0)) {
 			perror(__FILE__ ": Failed to set CCACHE_BASEDIR");
 			return 3;

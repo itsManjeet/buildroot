@@ -969,6 +969,7 @@ if BR2_STATIC_LIBS
 comment "External PHP extensions need a toolchain w/ dynamic library"
 endif
 endif
+	source "package/pocketpy/Config.in"
 	source "package/python3/Config.in"
 if BR2_PACKAGE_PYTHON3
 menu "External python modules"
@@ -1630,7 +1631,6 @@ menu "Crypto"
 	source "package/libmd/Config.in"
 	source "package/libmhash/Config.in"
 	source "package/libnss/Config.in"
-	source "package/libolm/Config.in"
 	source "package/libp11/Config.in"
 	source "package/libscrypt/Config.in"
 	source "package/libsecret/Config.in"

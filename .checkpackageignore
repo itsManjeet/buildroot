@@ -531,7 +531,6 @@ package/guile/0002-Makefile.am-fix-build-without-makeinfo.patch lib_patch.Upstre
 package/gumbo-parser/0001-configure.ac-fix-build-without-C.patch lib_patch.Upstream
 package/gutenprint/0001-use-pregen-xmli18n-header.patch lib_patch.Upstream
 package/gutenprint/0002-cups-support-replaces-static-with-static-libtool-lib.patch lib_patch.Upstream
-package/gvfs/0001-build-Remove-incorrect-i18n.merge_file-argument.patch lib_patch.Upstream
 package/harfbuzz/0001-meson.build-check-for-pthread.h.patch lib_patch.Upstream
 package/haserl/0001-add-haserl_lualib.inc.patch lib_patch.Upstream
 package/haveged/S21haveged Shellcheck lib_sysv.Variables
@@ -695,7 +694,6 @@ package/libsigrok/0001-Support-glibmm-2.68.patch lib_patch.Upstream
 package/libsigrokdecode/0001-configure-ac-Add-support-for-Python-3-9.patch lib_patch.Upstream
 package/libsigrokdecode/0002-configure-Add-python-3-10-support.patch lib_patch.Upstream
 package/libsigrokdecode/0003-configure-ac-Use-python3-embed-pc-as-a-fallback.patch lib_patch.Upstream
-package/libsoup/0001-meson.build-set-c_std-to-gnu99.patch lib_patch.Upstream
 package/libsoxr/0001-Add-Libs.private-for-static-linking.patch lib_patch.Upstream
 package/libspatialindex/0001-allow-building-static-libs.patch lib_patch.Upstream
 package/libspatialindex/0002-CMakeLists.txt-fix-CMAKE_BUILD_TYPE.patch lib_patch.Upstream
@@ -713,7 +711,6 @@ package/libtomcrypt/0001-fix-CVE-2019-17362.patch lib_patch.Upstream
 package/libtommath/0001-Build-test-bn_mp_set_double-c-on-more-platforms.patch lib_patch.Upstream
 package/libtorrent/0001-libtorrent.pc.in-add-Libs.Private.patch lib_patch.Upstream
 package/libubootenv/0001-src-CMakeLists.txt-do-not-force-the-build-of-a-share.patch lib_patch.Upstream
-package/libuhttpd/0001-add-compatibility-for-wolfssl-5-0.patch lib_patch.Upstream
 package/libuio/0001-configure.ac-set-automake-strictness-to-foreign.patch lib_patch.Upstream
 package/liburcu/0001-Only-blacklist-ARM-gcc-4.8.0-and-4.8.1.patch lib_patch.Upstream
 package/libvpx/0001-vpx_mem-vpx_mem.h-Fix-compilation-with-uClibc.patch lib_patch.Upstream
@@ -1016,7 +1013,6 @@ package/rapidxml/0001-ensure-internal-print-operations-are-declared-before.patch
 package/read-edid/0001-Fix-install-file-list.patch lib_patch.Upstream
 package/read-edid/0002-Fix-compiler-check.patch lib_patch.Upstream
 package/read-edid/0003-fix-build-with-gcc-10.patch lib_patch.Upstream
-package/readline/0001-curses-link.patch lib_patch.Upstream
 package/redis/0001-uclibc.patch lib_patch.Upstream
 package/redis/0002-largefile-conditional-define.patch lib_patch.Upstream
 package/redis/0003-redis.conf-adjust-defauts-for-buildroot.patch lib_patch.Upstream
@@ -1087,7 +1083,6 @@ package/snort/0005-fix-sparc.patch lib_patch.Upstream
 package/snort/0006-Fix-compile-error-when-building-against-uclibc-or-mu.patch lib_patch.Upstream
 package/snort/0007-Fix-error-when-building-on-a-Fedora-host-machine.patch lib_patch.Upstream
 package/snort/0008-Fix-NO-OPTIMIZE.patch lib_patch.Upstream
-package/socketcand/0001-Fix-GCC10-build-failure.patch lib_patch.Upstream
 package/softether/0001-Create-autotools-plumbing-for-SoftEther.patch lib_patch.Upstream
 package/softether/0002-Create-libsoftether.so-and-dynamically-link.patch lib_patch.Upstream
 package/softether/0003-use-fhs-install-directories.patch lib_patch.Upstream
@@ -1143,7 +1138,6 @@ package/tinycbor/0001-Makefile-add-DISABLE_WERROR.patch lib_patch.Upstream
 package/tinycompress/0001-wave-add-time.h-missing-header-inclusion.patch lib_patch.Upstream
 package/tinydtls/0001-sha2-sha2.c-fix-build-on-big-endian.patch lib_patch.Upstream
 package/tinyxml/0001-In-stamp-always-advance-the-pointer-if-p-0xef.patch lib_patch.Upstream
-package/tpm2-abrmd/S80tpm2-abrmd Shellcheck lib_sysv.Indent lib_sysv.Variables
 package/tpm2-tss/0001-Temporary-fix-for-build-without-C.patch lib_patch.Upstream
 package/transmission/S92transmission Shellcheck lib_sysv.ConsecutiveEmptyLines lib_sysv.Indent lib_sysv.Variables
 package/triggerhappy/S10triggerhappy Shellcheck lib_sysv.Indent lib_sysv.Variables
