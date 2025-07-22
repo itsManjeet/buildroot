@@ -828,7 +828,6 @@ package/netplug/0002-add-missing-time-include.patch lib_patch.Upstream
 package/netplug/0003-remove-assert-fail.patch lib_patch.Upstream
 package/netplug/S29netplug Shellcheck lib_sysv.Indent lib_sysv.Variables
 package/netplug/netplug-script Shellcheck lib_shellscript.ConsecutiveEmptyLines
-package/netsniff-ng/0001-Detect-libpcap-dependencies-using-pkg-config.patch lib_patch.Upstream
 package/netsnmp/S59snmpd Shellcheck lib_sysv.Indent lib_sysv.Variables
 package/netsurf/0001-avoid-system-perl-dependencies.patch lib_patch.Upstream
 package/netsurf/0002-do-not-cross-compile-nsgenbind.patch lib_patch.Upstream
@@ -857,7 +856,6 @@ package/norm/0001-protolib-drop-linux-version-check.patch lib_patch.Upstream
 package/norm/0002-Use-print-as-function-call-for-Python3-compatibility.patch lib_patch.Upstream
 package/norm/0003-Fix-mixed-tabs-spaces-in-protolib-wscript.patch lib_patch.Upstream
 package/nss-pam-ldapd/S45nslcd Shellcheck lib_sysv.EmptyLastLine lib_sysv.Indent lib_sysv.Variables
-package/ntp/0001-ntp-syscalls-fallback.patch lib_patch.Upstream
 package/ntp/S49ntp.in lib_sysv.Variables
 package/ntpsec/0001-wscript-remove-checks-for-bsd-string.h-fixes-host-co.patch lib_patch.Upstream
 package/nuttcp/0001-susv3-legacy.patch lib_patch.Upstream
